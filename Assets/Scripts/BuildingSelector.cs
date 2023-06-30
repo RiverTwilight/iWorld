@@ -36,8 +36,7 @@ private void SelectBuilding(GameObject building)
         selectedBuilding = building;
         // TODO: Apply outline shader
         // Show info
-        // string info = GetBuildingInfo(building); // You need to implement this method
-        string info = "1323123";
+        BuildingInfo info = FetchBuildingInfo(building.GetComponent<Building>().id); // You need to implement this method
         infoPanel.ShowInfo(info);
     }
 
@@ -50,5 +49,18 @@ private void SelectBuilding(GameObject building)
             infoPanel.HideInfo();
             selectedBuilding = null;
         }
+    }
+
+    private BuildingInfo FetchBuildingInfo(string uid)
+    {
+        // For now, return mock data
+        return new BuildingInfo
+        {
+            name = "Building " + uid,
+            id = uid,
+            area = 234,
+            owner = 34,
+            price = "345"
+        };
     }
 }
