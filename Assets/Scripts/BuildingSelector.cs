@@ -36,7 +36,7 @@ private void SelectBuilding(GameObject building)
         selectedBuilding = building;
         // TODO: Apply outline shader
         // Show info
-        BuildingInfo info = FetchBuildingInfo(building.GetComponent<Building>().id); // You need to implement this method
+        BuildingInfo info = FetchBuildingInfo(building.GetComponent<Building>().id);
         infoPanel.ShowInfo(info);
     }
 
