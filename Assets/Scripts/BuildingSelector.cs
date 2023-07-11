@@ -56,7 +56,8 @@ private void SelectBuilding(GameObject building)
         // For now, return mock data
         return new BuildingInfo
         {
-            name = "Building " + uid,
+            name = "建筑物名称 " + uid,
+            description = "村镇医院提供了200个床位，以及先进的医疗设备。拥有15个科室，24个主治医师，100余名护士，同时配备了老年护理中心。",
             id = uid,
             area = 234,
             owner = 34,

@@ -5,5 +5,6 @@ public class BuildingInfo
     public string id;
     public int area;
     public int owner;
+    public string description;
     public string price;
 }
